@@ -54,28 +54,28 @@ SynthDef.new(\hoatest, {
 	var sig;
 
 	// Setting variables for the HOA encoder and decoder
-    var theta = 0.0;
-    var phi = 0.0;
-    var radius = 1.5;
+	var theta = 0.0;
+	var phi = 0.0;
+	var radius = 1.5;
 	var order = 3;
 
-    sig = SinOsc.ar(freq);
+	sig = SinOsc.ar(freq);
 	sig = sig * amp;
 
 	// Encode
-    sig = HoaEncodeDirection.ar(sig, theta, phi, radius, order);
+	sig = HoaEncodeDirection.ar(sig, theta, phi, radius, order);
 
 	// Transform
-    sig = HoaRTT.ar(
-        sig,
+	sig = HoaRTT.ar(
+		sig,
 		MouseX.kr(0, 2pi),
-        0,
+		0,
 		MouseY.kr(0, pi),
-        order
-    );
+		order
+	);
 
 	// Speaker positions
-    ~directions = [
+	~directions = [
 		[ 15, 0 ], [ 45, 0 ], [ 75, 0 ], [ 105, 0 ], [ 135, 0 ], [ 165, 0 ],
 		[ 195, 0 ], [ 225, 0 ], [ 255, 0 ], [ 285, 0 ], [ 315, 0 ], [ 345, 0 ],
 		[ 30, 33 ], [ 90, 33 ], [ 150, 33 ], [ 210, 33 ], [ 270, 33 ], [ 330, 33 ],
