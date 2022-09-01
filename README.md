@@ -13,8 +13,10 @@ Connect with the Interface via USB and open the Motu Discovery app. An interface
 TODO: Describe necessary settings in the configuration interface
 
 ## 3. Run the code from Supercollider
-First you need to install the Ambisonic Toolkit for Supercollider: https://github.com/ambisonictoolkit/atk-sc3/blob/master/README.md#installing
-Installing the ATK requires Git to be installed on your computer.
+First you need to install the Ambisonic Toolkit for Supercollider. Installing the ATK requires Git to be installed on your computer. 
+
+https://github.com/ambisonictoolkit/atk-sc3/blob/master/README.md#installing
+
 Then open the Supercollider code in the reposity and play!
 
 ### Other useful ressources
