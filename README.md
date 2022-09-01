@@ -4,8 +4,7 @@ Some examples how to connect with the ambisonic speaker system (OTTOsonics) at t
 
 ## 1. Driver installation
 
-The system is using the AVB protocol via two Motu interfaces.
-
+The system is using the AVB protocol via two Motu interfaces.<br />
 Install the driver here: https://motu.com/de/download/ (select interfaces, then the "24Ao" entry and chose your operating system.
 
 ## 2. Check Motu AVB settings (Mac OS)
